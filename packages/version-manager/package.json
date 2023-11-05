@@ -1,0 +1,32 @@
+{
+  "name": "@platformatic/version-manager",
+  "version": "1.8.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "test": "pnpm run lint && c8 node ./test/runner.js",
+    "nocov": "pnpm run lint && node ./test/runner.js"
+  },
+  "bin": {
+    "plt-version-manager": "./version-manager.mjs"
+  },
+  "author": "Ivan Tymoshenko <ivan@tymoshenko.me>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/platformatic/platformatic.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/platformatic/platformatic/issues"
+  },
+  "homepage": "https://github.com/platformatic/platformatic#readme",
+  "devDependencies": {
+    "c8": "^8.0.1",
+    "glob": "^10.3.10",
+    "execa": "^8.0.1",
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.0"
+  },
+  "dependencies": {}
+}
